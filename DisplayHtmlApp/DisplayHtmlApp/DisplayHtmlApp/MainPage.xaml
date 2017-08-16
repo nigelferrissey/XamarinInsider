@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DisplayHtmlApp"
+             xmlns:userControls="clr-namespace:DisplayHtmlApp.UserControls;assembly=DisplayHtmlApp"
+             x:Class="DisplayHtmlApp.MainPage">
+
+	<Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <WebView Grid.Row="0"
+                 Source="https://www.xamarin.com" />
+        
+        <WebView Grid.Row="1"
+                 x:Name="MyWebView" />
+
+        <userControls:HtmlLabel Grid.Row="2"
+                                x:Name="MyHtmlLabel" />
+    </Grid>
+
+</ContentPage>
